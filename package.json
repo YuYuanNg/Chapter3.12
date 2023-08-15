@@ -1,0 +1,27 @@
+{
+    "name": "Chapter3.12",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.test.js",
+    "scripts": {
+      "test": "jest"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "save-dev": "^0.0.1-security",
+      "serverless": "^3.34.0"
+    },
+    "devDependencies": {
+      "jest": "^29.6.2",
+      "serverless-offline": "^12.0.4"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/YuYuanNg/Chapter3.12.git"
+    },
+    "bugs": {
+      "url": "https://github.com/YuYuanNg/Chapter3.12.git_v2/issues"
+    },
+    "homepage": "https://github.com/YuYuanNg/Chapter3.12.git_v2#readme"
+  }
