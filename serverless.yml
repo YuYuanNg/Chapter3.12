@@ -1,5 +1,5 @@
 # CHANGE-TO-YOURNAME-aws-node-http-api-project to your repo name! in line 2, service.
-service: yuyuan-aws-node-http-api-project
+service: Chapter3.12
 frameworkVersion: '3'
 
 provider:
