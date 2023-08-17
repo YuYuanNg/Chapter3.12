@@ -1,5 +1,5 @@
 # CHANGE-TO-YOURNAME-aws-node-http-api-project to your repo name! in line 2, service.
-service: chapter3.12
+service: chapter3-12
 frameworkVersion: '3'
 
 provider:
