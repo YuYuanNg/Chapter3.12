@@ -19,7 +19,7 @@ Include the overall steps and tools used in this assignment.
 
 ```bash
 # CHANGE-TO-YOURNAME-aws-node-http-api-project to your repo name! in line 2, service.
-service: Assignment3-13
+service: chapter3-12
 frameworkVersion: '3'
 
 provider:
@@ -32,7 +32,7 @@ functions:
     handler: index.handler
     events:
       - httpApi:
-          path: /yuyuan-cluster
+          path: /arn:aws:ecs:ap-southeast-1:255945442255:cluster/yuyuan-cluster
           method: get
 
 plugins:
