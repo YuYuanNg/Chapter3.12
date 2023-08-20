@@ -65,12 +65,8 @@ plugins:
 ```
 ### index.test.js
 ```bash
-const { handler } = require('./index');
-
-describe('Lambda Handler', () => {
-  it('returns a successful response', async () => {
-    const event = { key: 'value' };
-    const expectedResponse = {
+module.exports.handler = async (event) => {
+    return {
       statusCode: 200,
       body: JSON.stringify(
         {
@@ -81,11 +77,7 @@ describe('Lambda Handler', () => {
         2
       ),
     };
-    const response = await handler(event);
-    expect(response).toEqual(expectedResponse);
-  });
-});
-
+  };
 ```
 
 ### .github/workflows/main.yml
