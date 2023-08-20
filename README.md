@@ -59,8 +59,12 @@ module.exports.handler = async (event) => {
 ```
 ### index.test.js
 ```bash
-module.exports.handler = async (event) => {
-    return {
+const { handler } = require('./index');
+
+describe('Lambda Handler', () => {
+  it('returns a successful response', async () => {
+    const event = { key: 'value' };
+    const expectedResponse = {
       statusCode: 200,
       body: JSON.stringify(
         {
@@ -71,7 +75,10 @@ module.exports.handler = async (event) => {
         2
       ),
     };
-  };
+    const response = await handler(event);
+    expect(response).toEqual(expectedResponse);
+  });
+});
 ```
 
 ### .github/workflows/main.yml
