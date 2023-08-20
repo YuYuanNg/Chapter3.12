@@ -43,25 +43,19 @@ plugins:
 
 ### index.js
 ```bash
-# CHANGE-TO-YOURNAME-aws-node-http-api-project to your repo name! in line 2, service.
-service: Assignment3-13
-frameworkVersion: '3'
-
-provider:
-  name: aws
-  runtime: nodejs18.x
-  region: ap-southeast-1
-
-functions:
-  api:
-    handler: index.handler
-    events:
-      - httpApi:
-          path: /yuyuan-cluster
-          method: get
-
-plugins:
-  - serverless-offline
+module.exports.handler = async (event) => {
+    return {
+      statusCode: 200,
+      body: JSON.stringify(
+        {
+          message: "Go Serverless v3.0! Your function executed successfully!",
+          input: event,
+        },
+        null,
+        2
+      ),
+    };
+  };
 ```
 ### index.test.js
 ```bash
