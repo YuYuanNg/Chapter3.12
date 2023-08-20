@@ -156,5 +156,5 @@ jobs:
 - Run” serverless deploy”
 - Run “serverless remove” 
 - Add in .github/workflows/main.yml
-- Add in pre-deploy, install dependencies into main.yml
+- Add in pre-deploy, install dependencies, unit testing into main.yml
 - Carry out Github Action and Run the workflow.
