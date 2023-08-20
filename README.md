@@ -115,7 +115,8 @@ jobs:
         run: npm install
       - name: Run unit testing command
         run: npm test
-        
+
+
   deploy:
     name: deploy
     runs-on: ubuntu-latest
